@@ -1,0 +1,24 @@
+/* Reuse the original Mortgage Hub fields/result components; only this recording view changes. */
+body { font-size: 14px; line-height: 24px; }
+.deposit-demo { width: min(375px, 100%); margin-inline: auto; padding: 32px 8px 13px; }
+.deposit-intro { text-align: center; margin-bottom: 32px; }
+.deposit-intro h1 { margin: 0 16px; font-size: 32px; line-height: 48px; font-weight: 400; }
+.deposit-intro p { margin: 0 16px; font-size: 16px; line-height: 24px; }
+.deposit-intro img { display: block; margin: 16px auto 0; width: 164px; height: 160px; object-fit: contain; }
+.deposit-demo .section-title { margin: 0 0 3px; font-size: 24px; line-height: 30px; padding-inline: 8px; }
+.deposit-demo .planning-calculator { grid-template-columns: minmax(0, 1fr); gap: 10px; }
+.deposit-demo .deposit-fields { padding: 20px 23px 23px; border-color: #d8dfe9; }
+.deposit-demo .field > span:first-child { line-height: 21px; margin-bottom: 12px; }
+.deposit-demo .field .input-with-prefix input { height: 48px; padding-left: 32px; }
+.deposit-demo .range-field { margin-top: 24px; }
+.deposit-demo .range-labels { margin-top: 8px; font-size: 14px; line-height: 24px; }
+.deposit-demo input[type=range] { height: 8px; margin: 8px 0 12px; }
+.deposit-demo input[type=range]:focus-visible { outline: 2px solid #c2cbd7; outline-offset: 4px; }
+.deposit-demo input[type=range]::-webkit-slider-thumb { border: 0; box-shadow: 0 2px 5px rgb(4 25 66 / 20%); }
+.deposit-demo .range-ends { font-size: 14px; line-height: 24px; }
+.deposit-demo .ltv-help { margin-top: 16px; font-size: 14px; line-height: 24px; }
+.deposit-demo .ltv-help p { margin-top: 4px; }
+.deposit-demo .deposit-result { padding: 28px 24px 16px; border-radius: 12px; box-shadow: none; }
+.deposit-demo .deposit-result h3 { font-size: 32px; line-height: 40px; font-weight: 600; }
+.deposit-demo .deposit-result output { font-size: 60px; line-height: 72px; margin: 16px 0; }
+.deposit-demo .deposit-result p { font-size: 14px; line-height: 21px; }

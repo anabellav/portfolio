@@ -1,0 +1,18 @@
+/* About reuses the portfolio's fonts, palette, gutters, header and footer. */
+.about-page { padding: 64px 0 80px; }
+.about-page :where(h1, h2, p) { margin: 0; }
+.about-intro { max-width: 800px; padding-bottom: 32px; }
+.about-eyebrow { margin-bottom: 24px; color: var(--muted); font-size: 14px; font-weight: 400; line-height: 19px; letter-spacing: .14px; text-transform: uppercase; }
+.about-intro h1 { font-size: var(--hero-size); font-weight: 400; line-height: var(--hero-leading); }
+.about-lead { max-width: var(--reading-width); margin-top: 28px; font-size: 24px; line-height: 1.5; }
+.about-section { padding-bottom: 48px; }
+.about-section:not(:last-child) { padding-bottom: 20px; }
+.about-copy { max-width: var(--reading-width); font-size: 16px; line-height: 28px; letter-spacing: .16px; }
+.about-copy p + p { margin-top: 20px; }
+.about-work-link { display: inline-block; margin-top: 28px; text-decoration: underline; text-underline-offset: 5px; }
+.about-page + .site-footer { margin-top: 0; }
+@media (max-width: 760px) {
+  .about-page { padding: 40px 0 44px; }
+  .about-lead { font-size: 21px; }
+  .about-section { padding-bottom: 32px; }
+}

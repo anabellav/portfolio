@@ -1,0 +1,48 @@
+/* Product-only demo, sourced from Figma 392:9940. No portfolio globals. */
+@font-face { font-family: 'Open Sans'; src: url('assets/mortgage-hub-loading/open-sans-regular.ttf') format('truetype'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Open Sans'; src: url('assets/mortgage-hub-loading/open-sans-semibold.ttf') format('truetype'); font-weight: 600; font-display: swap; }
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; min-height: 100%; background: #fafaff; }
+body { container-type: inline-size; color: #041942; font-family: 'Open Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+iframe { border: 0; display: block; }
+.loading-header { height: 48px; background: #fff; box-shadow: 0 1px 0 rgba(216,223,233,.5); }
+.loading-header-inner { width: min(960px, calc(100% - 48px)); height: 100%; margin-inline: auto; padding-left: 2px; display: flex; justify-content: space-between; align-items: center; }
+.loading-account { display: flex; align-items: center; gap: 8px; color: #042759; font-size: 14px; font-weight: 600; line-height: 14px; }
+.loading-account > img:first-child { margin-right: 0; }
+.loading-account > img:last-child { margin-inline: 3px; }
+.loading-content { padding: 96px 24px 40px; }
+.loading-content h1 { margin: 0; text-align: center; font-size: 32px; line-height: 32px; font-weight: 400; }
+.loading-illustration { position: relative; width: 242px; height: 236px; margin: 32px auto 29.5px; }
+.loading-illustration > img { position: absolute; left: -58px; top: -58px; animation: meditate 6.4s infinite; }
+@keyframes meditate {
+  0%, 100% { transform: translateY(0); animation-timing-function: cubic-bezier(.45,0,.55,1); }
+  42% { transform: translateY(-24px); animation-timing-function: ease-in-out; }
+  54% { transform: translateY(-24px); animation-timing-function: cubic-bezier(.45,0,.55,1); }
+}
+.loading-steps { width: max-content; max-width: 100%; margin: 0 auto; padding: 0; list-style: none; color: #0b0e2d; font-size: 16px; line-height: 21px; }
+.loading-steps li { position: relative; display: flex; align-items: center; gap: 12px; min-height: 21px; }
+.loading-steps li + li { margin-top: 16px; }
+.loading-steps li:not(:last-child)::after { content: ''; position: absolute; left: 7px; top: 20px; width: 1px; height: 12px; background: #d8dfe9; }
+.step-marker { position: relative; width: 16px; height: 16px; flex: 0 0 16px; }
+.step-marker img { position: absolute; inset: 0; transition: opacity 180ms ease; }
+.step-marker .complete-icon, .step-marker .tick-icon { opacity: 0; }
+.step-marker .tick-icon { inset: 5.818px auto auto 4.364px; }
+[data-state='active'] .pending-icon { outline: 1px solid #2ace93; outline-offset: 2px; border-radius: 50%; }
+[data-state='complete'] .pending-icon { opacity: 0; }
+[data-state='complete'] :is(.complete-icon, .tick-icon) { opacity: 1; }
+.loading-steps { opacity: var(--sequence-opacity, 1); }
+@container (max-width: 600px) {
+  .loading-header-inner { padding-left: 0; }
+  .loading-content { padding-top: 32px; padding-inline: 16px; }
+  .loading-content h1 { max-width: 327px; margin-inline: auto; font-size: 32px; line-height: 48px; }
+  .loading-illustration { margin-bottom: 40px; }
+  .loading-steps { width: 311px; font-size: 16px; line-height: 24px; }
+  .loading-steps li { align-items: flex-start; gap: 12px; min-height: 24px; }
+  .loading-steps li + li { margin-top: 24px; }
+  .step-marker { margin-top: 4px; }
+  .loading-steps li:not(:last-child)::after { top: 24px; height: 24px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .loading-illustration > img { animation: none; }
+  .step-marker img { transition: none; }
+}

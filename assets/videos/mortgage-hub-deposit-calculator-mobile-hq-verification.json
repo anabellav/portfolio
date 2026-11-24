@@ -1,0 +1,36 @@
+{
+  "ffmpeg_version": "7.1 built with Apple clang version 13.1.6 (clang-1316.0.21.2.5)",
+  "codec": "h264",
+  "pix_fmt": "yuv420p(progressive)",
+  "fps": 30.0,
+  "source_size": [
+    1000,
+    3088
+  ],
+  "size": [
+    1000,
+    3088
+  ],
+  "rotate": 0,
+  "duration": 9.0,
+  "bytes": 558102,
+  "console_errors": [],
+  "capture": "Lossless Playwright PNG frames; one H.264 encoding pass",
+  "crf": 14,
+  "desktop_export": {
+    "size": [
+      548,
+      1692
+    ],
+    "crf": 12,
+    "bytes": 334319,
+    "filter": "lanczos"
+  },
+  "css_size": [
+    375,
+    1158
+  ],
+  "render_scale": 2.6666666666666665,
+  "aspect_ratio": "125:386",
+  "interaction": "Property \u00a3350,000; LTV 80\u201395%; reset"
+}

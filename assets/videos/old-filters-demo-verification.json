@@ -1,0 +1,46 @@
+{
+  "canvas_css": [
+    880,
+    558
+  ],
+  "render_scale": 2,
+  "viewport": {
+    "width": 1760,
+    "height": 1116
+  },
+  "recording": "Playwright recordVideo",
+  "interaction": {
+    "search": "September",
+    "from": "2026-09-01",
+    "to": "2026-09-30",
+    "results": 2,
+    "empty_state": {
+      "dataset_search": "Workforce",
+      "dates_applied": true,
+      "results": 0,
+      "message": "No results found",
+      "illustration": false
+    },
+    "recovered_results": 2
+  },
+  "webm": {
+    "size": [
+      1760,
+      1116
+    ],
+    "fps": 25.0,
+    "duration": 14.64,
+    "outer_edges": "clean",
+    "initial_table": "visible"
+  },
+  "mp4": {
+    "size": [
+      1760,
+      1116
+    ],
+    "fps": 25.0,
+    "duration": 14.64,
+    "outer_edges": "clean",
+    "initial_table": "visible"
+  }
+}

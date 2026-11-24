@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mortgage Hub · What’s next</title>
+  <link rel="stylesheet" href="mortgage-hub-demo.css">
+  <link rel="stylesheet" href="mortgage-hub-loading-demo.css">
+  <link rel="stylesheet" href="mortgage-hub-next-steps-demo.css">
+  <script src="mortgage-hub-next-steps-demo.js" defer></script>
+</head>
+<body>
+  <header class="loading-header"><div class="loading-header-inner">
+    <img src="assets/mortgage-hub-loading/logo.svg" width="87.452" height="14" alt="Trussle">
+    <div class="loading-account"><img src="assets/mortgage-hub-loading/avatar.svg" width="24" height="24" alt=""><span>Lily</span><img src="assets/mortgage-hub-loading/chevron.svg" width="10" height="6" alt=""></div>
+  </div></header>
+  <main class="next-demo">
+    <h1>What’s next</h1>
+    <div class="next-card">
+      <div class="journey-column">
+        <ol class="journey-list" aria-label="Steps to get a mortgage">
+          <li data-complete="true"><img class="step-icon" src="assets/mortgage-hub-next-steps/complete.svg" width="20" height="20" alt="Complete"><span>See what you could borrow with a MIP</span></li>
+          <li id="offer-step"><img class="step-icon" src="assets/mortgage-hub-next-steps/incomplete.svg" width="20" height="20" alt="Not complete"><span>Get an offer accepted on a home</span></li>
+          <li id="application-step"><img class="step-icon" src="assets/mortgage-hub-next-steps/incomplete.svg" width="20" height="20" alt="Not complete"><span>Tell us about your situation</span></li>
+          <li><img class="step-icon" src="assets/mortgage-hub-next-steps/incomplete.svg" width="20" height="20" alt="Not complete"><span>Get a mortgage recommendation</span></li>
+          <li><img class="step-icon" src="assets/mortgage-hub-next-steps/incomplete.svg" width="20" height="20" alt="Not complete"><span>Sit back while we apply for your mortgage</span></li>
+        </ol>
+      </div>
+      <div class="next-copy" aria-live="polite">
+        <p id="next-advice">You’re likely to need a MIP to put in an offer on a home.</p>
+        <p id="next-guidance">If you’ve started viewing homes, we’ll give you personalised information to help you along.</p>
+        <fieldset class="viewing-question"><legend>Have you started viewing homes?</legend><div class="radio-row">
+          <label class="radio-choice"><input type="radio" name="viewing" value="yes">Yes</label>
+          <label class="radio-choice"><input type="radio" name="viewing" value="no">No</label>
+        </div></fieldset>
+      </div>
+    </div>
+    <section class="application-section" aria-labelledby="application-heading">
+      <h2 id="application-heading">Had an offer accepted?</h2>
+      <div class="application-card">
+        <div class="application-info"><img src="assets/mortgage-hub-next-steps/application.png" width="65" height="65" alt="An envelope with an approved document"><p>Our award-winning service is 100% fee free.</p></div>
+        <button type="button" class="primary-button" id="apply-button">Apply for a mortgage</button>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

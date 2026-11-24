@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="45" height="44" viewBox="0 0 45 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon">
+<mask id="stroke0_0_119" fill="white">
+<path d="M20.5 10C20.5 15.5228 15.9109 20 10.25 20C4.58908 20 0 15.5228 0 10C0 4.47715 4.58908 0 10.25 0C15.9109 0 20.5 4.47715 20.5 10Z"/>
+</mask>
+<ellipse id="Ellipse 3" cx="10.25" cy="10" rx="10.25" ry="10" stroke-width="3" stroke="#2E2E2E" mask="url(#stroke0_0_119)"/>
+<mask id="stroke1_0_119" fill="white">
+<path d="M45 10C45 15.5228 40.4109 20 34.75 20C29.0891 20 24.5 15.5228 24.5 10C24.5 4.47715 29.0891 0 34.75 0C40.4109 0 45 4.47715 45 10Z"/>
+</mask>
+<ellipse id="Ellipse 4" cx="34.75" cy="10" rx="10.25" ry="10" stroke-width="3" stroke="#2E2E2E" mask="url(#stroke1_0_119)"/>
+<mask id="stroke2_0_119" fill="white">
+<path d="M20.5 34C20.5 39.5228 15.9109 44 10.25 44C4.58908 44 0 39.5228 0 34C0 28.4772 4.58908 24 10.25 24C15.9109 24 20.5 28.4772 20.5 34Z"/>
+</mask>
+<ellipse id="Ellipse 6" cx="10.25" cy="34" rx="10.25" ry="10" stroke-width="3" stroke="#2E2E2E" mask="url(#stroke2_0_119)"/>
+</g>
+</svg>

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New table filters demo · Orgvue</title>
+  <link rel="stylesheet" href="table-filters-after-demo.css">
+  <script src="table-filters-after-demo.js" defer></script>
+</head>
+<body>
+  <main class="after-card" aria-label="Dataset table with shared search and filters">
+    <div class="toolbar">
+      <div class="search-wrap"><input id="table-search" type="search" placeholder="Search..." aria-label="Search datasets" autocomplete="off"><img src="assets/table-filters-after-demo/search.svg" alt=""></div>
+      <div class="filter-control" id="filter-control">
+        <button id="open-filters" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="filter-popover"><img id="filter-icon" src="assets/table-filters-after-demo/filter-default.svg" alt=""><span id="filter-label">Filters</span></button>
+        <button id="clear-filters" type="button" aria-label="Clear all applied filters" hidden><img src="assets/table-filters-after-demo/clear.svg" alt=""></button>
+      </div>
+      <button class="settings-button" type="button" aria-label="Table settings" aria-disabled="true"><img src="assets/table-filters-after-demo/settings.svg" alt=""></button>
+    </div>
+    <div class="table-container">
+      <table aria-label="Datasets and last update dates"><colgroup><col><col></colgroup>
+        <thead><tr><th scope="col">Dataset</th><th scope="col">Updated</th></tr></thead>
+        <tbody id="dataset-rows"></tbody>
+      </table>
+    </div>
+    <section id="filter-popover" class="filter-popover" role="dialog" aria-label="Filter datasets by updated date" hidden>
+      <img class="popover-arrow" src="assets/table-filters-after-demo/popover-arrow.svg" alt="">
+      <form id="filter-form" novalidate>
+        <div class="filter-heading"><h2>Filter by</h2><button id="clear-draft" type="button" disabled>Clear all</button></div>
+        <label for="filter-from">From<span class="date-field"><input id="filter-from" type="text" placeholder="Select date" autocomplete="off" inputmode="numeric" aria-describedby="date-error"><button type="button" data-calendar="from" aria-label="Choose From date" aria-expanded="false" aria-controls="calendar"><img src="assets/table-filters-after-demo/calendar.svg" alt=""></button></span></label>
+        <label for="filter-to">To<span class="date-field"><input id="filter-to" type="text" placeholder="Select date" autocomplete="off" inputmode="numeric" aria-describedby="date-error"><button type="button" data-calendar="to" aria-label="Choose To date" aria-expanded="false" aria-controls="calendar"><img src="assets/table-filters-after-demo/calendar.svg" alt=""></button></span></label>
+        <p id="date-error" role="alert" hidden></p>
+        <div class="filter-actions"><button id="apply-filters" type="submit" disabled>Apply filters</button></div>
+      </form>
+    </section>
+    <section id="calendar" class="calendar" role="dialog" aria-label="Choose date" hidden>
+      <div class="calendar-header">
+        <button type="button" data-nav="-12" aria-label="Previous year"><img src="assets/table-filters-after-demo/year-previous.svg" alt=""></button>
+        <button type="button" data-nav="-1" aria-label="Previous month"><img src="assets/table-filters-after-demo/month-previous.svg" alt=""></button>
+        <span id="calendar-heading" aria-live="polite"></span>
+        <button type="button" data-nav="1" aria-label="Next month"><img src="assets/table-filters-after-demo/month-next.svg" alt=""></button>
+        <button type="button" data-nav="12" aria-label="Next year"><img src="assets/table-filters-after-demo/year-next.svg" alt=""></button>
+      </div>
+      <div class="calendar-body"><div class="weekdays" aria-hidden="true"><span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span></div><div id="calendar-days" class="calendar-days"></div></div>
+    </section>
+    <template id="no-results-template">
+      <div class="empty-state">
+        <div class="empty-state-illustration" aria-hidden="true"><img src="assets/table-filters-after-demo/no-results.svg" alt=""></div>
+        <strong>No results</strong>
+        <p>Consider adjusting the filters.</p>
+      </div>
+    </template>
+    <p id="result-status" class="sr-only" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

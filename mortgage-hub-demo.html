@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An interactive portfolio prototype of the original Trussle Mortgage Hub concept.">
+  <title>Mortgage Hub · Trussle demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&amp;family=Open+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mortgage-hub-demo.css">
+  <script src="mortgage-hub-demo.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#hub-content">Skip to Mortgage Hub</a>
+  <header class="product-header">
+    <div class="hub-width header-inner">
+      <a href="mortgage-hub-demo.html" aria-label="Trussle Mortgage Hub home"><img src="assets/mortgage-hub/trussle-logo.svg" alt="Trussle" class="product-logo"></a>
+      <div class="account">
+        <button id="account-toggle" aria-expanded="false" aria-controls="account-panel"><span class="avatar" aria-hidden="true"></span>Lily<img src="assets/mortgage-hub/chevron.svg" alt=""></button>
+        <div id="account-panel" class="account-panel" hidden>
+          <button data-action="home">My Mortgage Hub</button>
+          <button data-action="stage">Change buying stage</button>
+          <button data-action="start">Start page</button>
+          <button data-action="support">Adviser support</button>
+          <button data-action="reset">Reset demo</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="hub-content" tabindex="-1"><noscript><div class="hub-width">Please enable JavaScript to explore this interactive Mortgage Hub prototype.</div></noscript></div>
+    <section id="guides" class="guides-section" aria-labelledby="guides-heading">
+      <div class="hub-width">
+        <h2 id="guides-heading">Useful guides for you</h2>
+        <div id="guide-groups" class="guide-groups"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="product-footer">
+    <div class="hub-width">
+      <img src="assets/mortgage-hub/trussle-footer.svg" alt="Trussle" class="footer-logo">
+      <p class="trustpilot">Rated <strong>Excellent</strong> on <img src="assets/mortgage-hub/trustpilot.svg" alt="Trustpilot"></p>
+      <p>© Trussle Lab Ltd 2021</p>
+      <p>1-3 Dufferin Street, London, EC1Y 8NA. Registered in England and Wales: 09459339.</p>
+      <p>Trussle is a trading name of Trussle Lab Ltd, which is authorised and regulated by the Financial Conduct Authority under firm reference number 924229.</p>
+      <p>You may have to pay an early repayment charge to your existing lender if you remortgage. Your home may be repossessed if you do not keep up repayments on your mortgage.</p>
+      <button class="text-link" data-action="privacy">Privacy policy</button>
+    </div>
+  </footer>
+
+  <dialog id="hub-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Close dialog">×</button>
+    <div id="dialog-content"></div>
+  </dialog>
+  <p id="hub-status" class="sr-only" role="status" aria-live="polite"></p>
+</body>
+</html>

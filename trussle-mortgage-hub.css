@@ -1,0 +1,42 @@
+/* Mortgage Hub, Figma 346:19851. Shared portfolio foundations stay unchanged. */
+.mh-case .mh-project-title { display: block; font-weight: 600; }
+.mh-case .mh-cover { border-radius: 8px; }
+.mh-mobile-demos { display: grid; grid-template-columns: 261px 261px 276px; gap: 24px; justify-content: center; align-items: start; }
+.mh-mobile-demos figure { margin: 0; min-width: 0; border: 1px solid #dfdfdf; }
+.mh-mobile-video { display: block; width: 100%; height: auto; border: 0; outline: 0; background: #fafaff; }
+.mh-case .body-copy p { letter-spacing: 0; }
+.mh-case .body-copy .mh-continuation { margin-top: 0; }
+
+/* The research and hypothesis share a section's padding, with a 44px gap. */
+.mh-case .mh-research h2 { margin-block: 32px; }
+.mh-questions { margin-top: 28px; }
+.mh-case :is(.mh-questions, .mh-findings) h3 { margin: 0; font-family: var(--font-body); font-size: 16px; font-weight: 700; line-height: 28px; }
+.mh-questions ul { margin: 0; padding-left: 24px; font-size: 16px; line-height: 28px; }
+.mh-research > .editorial-copy { max-width: none; }
+.mh-research > .editorial-copy > :not(.mh-findings) { max-width: var(--case-reading); }
+.mh-findings { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: auto; grid-auto-rows: 1fr; gap: 16px 24px; margin-top: 32px; }
+.mh-findings > h3 { grid-column: 1 / -1; }
+.mh-statistic { min-width: 0; padding: 24px; border-radius: 8px; background: #fafaff; }
+.mh-case .mh-statistic-value { font-family: var(--font-heading); font-size: 60px; font-weight: 400; line-height: 72px; letter-spacing: 0; color: #283e38; }
+.mh-case .mh-statistic-description { margin-top: 4px; font-family: var(--font-body); color: var(--ink); }
+.mh-hypothesis { margin-top: 44px; }
+
+/* Only these source-defined columns use white surfaces on the neutral surround. */
+.mh-direction-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; padding: 16px; margin-top: 24px; background: #f8f8f8; }
+.mh-direction-item { min-width: 0; display: flex; flex-direction: column; gap: 16px; padding: 16px; background: var(--paper); border-radius: 8px; }
+.mh-case .mh-direction-item h3 { margin: 0; font-family: var(--font-body); font-size: 16px; font-weight: 700; line-height: 28px; }
+.mh-case .mh-direction-item p { letter-spacing: 0; }
+.mh-case .mh-direction-item .mh-example { margin-top: 28px; }
+.mh-design-visuals { display: grid; gap: 24px; margin-top: 24px; }
+
+@media (max-width: 926px) {
+  .mh-mobile-demos { grid-template-columns: minmax(0, 375px); }
+}
+
+@media (max-width: 760px) {
+  .mh-direction-grid { grid-template-columns: 1fr; gap: 24px; }
+  .mh-direction-item figure { width: 100%; }
+  .mh-case .mh-research h2 { margin-block: 24px; }
+  .mh-findings { grid-template-columns: 1fr; margin-top: 28px; }
+  .mh-hypothesis { margin-top: 44px; }
+}

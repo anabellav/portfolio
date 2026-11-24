@@ -1,0 +1,47 @@
+/* Better.co.uk case study, Figma 331:18622 (1440px).
+   Typography, content gutters and navigation are inherited from the portfolio. */
+.better-case { padding-bottom: 0; }
+.better-case .case-intro { padding-bottom: 38px; }
+.better-case .project-title-line { display: block; font-weight: 600; }
+.better-case .body-copy p { letter-spacing: 0; }
+.better-case .body-copy .joined-paragraph { margin-top: 0; }
+
+/* Insights: equal columns, with the visual starting 56px below the eyebrow. */
+.insights-layout { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; }
+.better-case .get-started-visual { padding-top: 56px; }
+.get-started-frame { aspect-ratio: 478 / 627; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+.better-case .get-started-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.better-case figcaption { color: var(--muted); font-family: var(--font-body); font-size: 14px; font-weight: 400; font-style: italic; line-height: 28px; text-align: center; }
+.get-started-visual figcaption { margin-top: 4px; }
+.better-case .progress-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 64px; margin: 24px 0; padding: 24px 0; }
+.progress-metrics > div { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.progress-metrics dt { order: 1; font-family: var(--font-heading); font-size: 16px; font-weight: 600; line-height: 24px; }
+.better-case .progress-metrics dd { order: 0; font-family: var(--font-heading); font-size: 60px; font-weight: 400; line-height: 72px; letter-spacing: 0; color: #283e38; }
+.calculator-callout { padding: 16px 0; border-top: 1px solid var(--line); }
+.better-case .calculator-callout h3 { margin: 0 0 8px; font-size: 16px; font-weight: 600; line-height: 28px; }
+.calculator-callout .body-copy { max-width: var(--reading-width); font-family: var(--font-heading); }
+
+/* Original test screenshots stay equal in size and retain their own captions. */
+.variation-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
+.variation-comparison figcaption { margin-top: 8px; font-size: 16px; letter-spacing: .16px; }
+
+/* This is the approved redesign composition, separate from the hero artwork. */
+.redesign-gallery { display: grid; gap: 32px; margin-top: 44px; padding: 44px 32px; background: #e6e8f9; }
+.redesign-screens { display: grid; grid-template-columns: minmax(0, 637fr) minmax(0, 245fr); gap: 32px; padding-right: 2px; align-items: start; }
+.redesign-desktop { aspect-ratio: 637 / 603; border-radius: 4px; overflow: hidden; }
+.redesign-mobile { aspect-ratio: 245 / 603; overflow: hidden; }
+.better-case .redesign-screens img { width: 100%; height: 100%; object-fit: cover; }
+.better-case .redesign-section h2 { margin-bottom: 24px; }
+
+@media (max-width: 760px) {
+  .better-case .case-intro { padding-bottom: 32px; }
+  .insights-layout { grid-template-columns: 1fr; gap: 32px; }
+  .better-case .get-started-visual { padding-top: 0; }
+  .better-case .progress-metrics { grid-template-columns: 1fr; gap: 24px; }
+  .better-case .progress-metrics dd { font-size: 44px; line-height: 53px; }
+  .variation-comparison { grid-template-columns: 1fr; gap: 28px; margin-top: 32px; }
+  .redesign-gallery { margin-top: 32px; padding: 24px 16px; gap: 24px; }
+  .redesign-screens { grid-template-columns: 1fr; gap: 24px; padding-right: 0; }
+  .redesign-mobile { width: min(100%, 320px); justify-self: center; }
+}
+

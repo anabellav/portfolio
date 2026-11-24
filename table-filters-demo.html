@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Table filters demo · Orgvue</title>
+  <link rel="stylesheet" href="table-filters-demo.css">
+  <script src="table-filters-demo.js" defer></script>
+</head>
+<body>
+  <main class="demo-card" aria-label="Dataset table">
+    <table aria-label="Datasets and last update dates">
+      <colgroup><col><col></colgroup>
+      <thead><tr>
+        <th scope="col">
+          <div class="header-cell">
+            <input type="checkbox" id="select-all" aria-label="Select all visible datasets">
+            <button class="sort-button" type="button" data-sort="name">Dataset<span class="sort-icon" aria-hidden="true"><img src="assets/table-filters-demo/AntDesignIconCaretUpOutlined.svg" alt=""><img src="assets/table-filters-demo/AntDesignIconCaretDownOutlined.svg" alt=""></span></button>
+            <button class="filter-trigger" type="button" data-filter="name" aria-label="Filter Dataset" aria-haspopup="dialog" aria-expanded="false" aria-controls="filter-popover"><img src="assets/table-filters-demo/IconFilterSearch.svg" alt=""></button>
+          </div>
+        </th>
+        <th scope="col">
+          <div class="header-cell">
+            <button class="sort-button" type="button" data-sort="updated">Updated<span class="sort-icon" aria-hidden="true"><img src="assets/table-filters-demo/AntDesignIconCaretUpOutlined.svg" alt=""><img src="assets/table-filters-demo/AntDesignIconCaretDownOutlined.svg" alt=""></span></button>
+            <button class="filter-trigger" type="button" data-filter="updated" aria-label="Filter Updated" aria-haspopup="dialog" aria-expanded="false" aria-controls="filter-popover"><img src="assets/table-filters-demo/IconFilterSearch1.svg" alt=""></button>
+          </div>
+        </th>
+      </tr></thead>
+      <tbody id="dataset-rows"></tbody>
+    </table>
+    <section id="filter-popover" class="filter-popover" role="dialog" aria-label="Filter Updated" hidden>
+      <form id="filter-form" novalidate>
+        <div class="popover-search">
+          <div class="search-field">
+            <input id="filter-search" type="search" placeholder="Search..." aria-label="Search updated dates" autocomplete="off">
+            <button type="submit" aria-label="Apply search"><img src="assets/table-filters-demo/Search.svg" alt=""></button>
+          </div>
+        </div>
+        <div class="date-fields" id="date-fields">
+          <label for="filter-from">From
+            <span class="date-field"><input id="filter-from" type="text" placeholder="YYYY-MM-DD" inputmode="numeric" autocomplete="off" aria-describedby="filter-error"><button type="button" data-calendar="from" aria-label="Choose From date" aria-expanded="false" aria-controls="calendar"><img src="assets/table-filters-demo/Calendar.svg" alt=""></button></span>
+          </label>
+          <label for="filter-to">To
+            <span class="date-field"><input id="filter-to" type="text" placeholder="YYYY-MM-DD" inputmode="numeric" autocomplete="off" aria-describedby="filter-error"><button type="button" data-calendar="to" aria-label="Choose To date" aria-expanded="false" aria-controls="calendar"><img src="assets/table-filters-demo/Calendar.svg" alt=""></button></span>
+          </label>
+        </div>
+        <p id="filter-error" class="filter-error" role="alert" hidden></p>
+        <div class="popover-footer"><button id="filter-reset" type="button" class="reset-button" disabled>Reset</button><button id="filter-apply" type="submit" class="apply-button" disabled>OK</button></div>
+      </form>
+    </section>
+    <section id="calendar" class="calendar" role="dialog" aria-label="Choose date" hidden>
+      <div class="calendar-header">
+        <button type="button" data-calendar-nav="-12" aria-label="Previous year"><img src="assets/table-filters-demo/ChevronDoubleLeft.svg" alt=""></button>
+        <button type="button" data-calendar-nav="-1" class="month-arrow" aria-label="Previous month"><img src="assets/table-filters-demo/ChevronLeft.svg" alt=""></button>
+        <button type="button" id="calendar-heading" aria-label="Choose month"></button>
+        <button type="button" data-calendar-nav="1" class="month-arrow" aria-label="Next month"><img src="assets/table-filters-demo/ChevronRight.svg" alt=""></button>
+        <button type="button" data-calendar-nav="12" aria-label="Next year"><img src="assets/table-filters-demo/ChevronDoubleRight.svg" alt=""></button>
+      </div>
+      <div id="calendar-body" class="calendar-body"></div>
+      <button type="button" id="calendar-today" class="calendar-today">Today</button>
+    </section>
+    <p class="sr-only" id="result-status" role="status" aria-live="polite"></p>
+  </main>
+</body>
+</html>

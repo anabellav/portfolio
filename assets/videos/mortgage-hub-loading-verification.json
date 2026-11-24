@@ -1,0 +1,22 @@
+{
+  "ffmpeg_version": "7.1 built with Apple clang version 13.1.6 (clang-1316.0.21.2.5)",
+  "codec": "h264",
+  "pix_fmt": "yuv420p(tv, bt470bg/unknown/unknown, progressive)",
+  "fps": 25.0,
+  "source_size": [
+    1960,
+    1512
+  ],
+  "size": [
+    1960,
+    1512
+  ],
+  "rotate": 0,
+  "duration": 6.4,
+  "frames": 160,
+  "bytes": 208747,
+  "recording": "Playwright recordVideo; no resizing, cropping or overlays",
+  "console_errors": [],
+  "hero_aspect_ratio": "980:756",
+  "outer_edges": "clean"
+}

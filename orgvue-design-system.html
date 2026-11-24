@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Establishing a shared design system across Orgvue’s products. A case study by Anabella Volpi.">
+<title>Orgvue design system · Anabella Volpi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=restored-width"><link rel="stylesheet" href="orgvue-case-study.css?v=white-transparent-nav-20261123">
+<script src="orgvue-case-study.js?v=overview-midpoint-nav-20261123" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header wrap"><a class="wordmark" href="index.html" aria-label="Anabella Volpi, home"><img src="assets/orgvue/orgvue-logo.svg" alt="Anabella Volpi AV logo"></a><nav aria-label="Main navigation"><a href="index.html#work">Work</a><a href="about.html">About</a></nav></header>
+<main id="main" class="case-study wrap">
+<header class="case-intro"><a class="back-link" href="index.html#work">← Back to work</a><h1>Establishing a shared design system across Orgvue’s products</h1></header>
+<figure class="case-cover"><img src="assets/orgvue/ods-hero.png" width="980" height="544" alt="An overview of Orgvue’s design system, including components, interaction patterns and documentation."></figure>
+<section class="case-section overview-section" aria-labelledby="overview">
+<div class="editorial-copy"><p class="process-eyebrow">Overview</p><h2 id="overview" tabindex="-1">A system that needed to scale</h2><div class="body-copy"><p>The Design System was already providing value, but it wasn't mature enough to support product development consistently across Orgvue.</p>
+<p>Teams still had to solve common UI and UX problems independently. Key components and patterns were missing, guidance was fragmented, and the shared technical foundations needed further development.</p>
+<p>This led to duplicated work, inconsistent experiences and additional maintenance across products. The challenge was to evolve the Design System from a useful component library into a scalable, shared foundation for both human and AI-assisted development.</p></div></div>
+<dl class="case-meta"><div><dt>Role</dt><dd>Senior Product Designer</dd></div><div><dt>Scope</dt><dd>Strategy, design, governance, adoption</dd></div><div><dt>Impact</dt><dd>Standardised 10+ products</dd></div></dl>
+</section>
+<!-- Preserve section navigation without adding a resting menu band to the Figma layout. -->
+<nav class="case-nav wrap" aria-label="Case study sections" aria-hidden="true" inert><div class="case-nav-inner">
+<a href="#overview">Overview</a><a href="#areas-of-work">Areas of work</a><a href="#research">Research</a><a href="#system-audit">System audit</a><a href="#shared-components">Shared patterns</a><a href="#implementation">Implementation</a>
+</div></nav>
+<section class="case-section areas-section" aria-labelledby="areas-of-work">
+<div class="editorial-copy"><p class="process-eyebrow">Areas of work</p><h2 id="areas-of-work" tabindex="-1">From feedback to priorities</h2><div class="body-copy"><p>We ran a survey across R&amp;D to understand how teams experienced the design system and establish a baseline for future comparison. We received responses across design, engineering and product management</p>
+<p>The feedback highlighted missing components, unclear contribution guidance and inconsistent communication about updates. It also raised concerns about ownership and limited resources.</p></div></div>
+<div class="priority-areas"><article><div class="priority-icon"><img src="assets/orgvue/ods-components.svg" alt=""></div><h3>Inconsistent components and unclear guidance</h3><p>Standardise components and interaction patterns across products, with clear guidance on when and how to use them.</p></article>
+<article><div class="priority-icon"><img src="assets/orgvue/ods-releases.svg" alt=""></div><h3>Design system put upcoming product releases at risk</h3><p>Prioritise the components and patterns squads needed first so upcoming releases could stay on track.</p></article>
+<article><div class="priority-icon"><img src="assets/orgvue/ods-accessibility.svg" alt=""></div><h3>Accessibility gaps in shared components and patterns</h3><p>Address accessibility issues in shared components and patterns so the same fixes can benefit multiple products.</p></article></div>
+<aside class="ai-callout"><h3>Our growing use of AI added another requirement</h3><p>Over the past year, our team had started using AI in design and development. This made consistent components and reliable, well-structured documentation even more important, so AI tools could draw on the same standards as designers and engineers.</p></aside>
+</section>
+<section class="case-section research-section" aria-labelledby="research">
+<div class="editorial-copy"><p class="process-eyebrow">Research and synthesis</p><h2 id="research" tabindex="-1">What needed to change</h2><div class="body-copy"><p>The survey gave us a broad view of where teams struggled. I followed this with an audit of components and interaction patterns across the products to understand how those issues appeared in practice.</p>
+<p>I compared existing implementations, documented inconsistencies and worked with product designers to understand why different variations had emerged.</p>
+<p>This helped us separate one-off product needs from problems that belonged at system level, and gave us a clearer backlog of components and patterns to improve.</p></div></div>
+<figure class="research-visual"><img src="assets/orgvue/ods-research.png" width="1960" height="1382" alt="Research and synthesis board bringing together design-system findings, product examples and workshop notes."></figure>
+</section>
+<section class="case-section audit-section" aria-labelledby="system-audit">
+<div class="editorial-copy"><p class="process-eyebrow">System audit</p><h2 id="system-audit" tabindex="-1">The gaps across products</h2><div class="body-copy"><p>This example focuses on navigation, where the audit revealed different approaches to structure, hierarchy and common controls across products.</p></div></div>
+<div class="audit-findings"><article><h3>Structure and hierarchy</h3><p>Navigation varied between full menus, icon-only menus and different header layouts.</p></article>
+<article><h3>Actions and placement</h3><p>Common controls appeared in different positions and groupings across products.</p></article>
+<article><h3>Location and context</h3><p>Context varied between product names, breadcrumbs and workspace labels.</p></article></div>
+<figure class="audit-visual"><img src="assets/orgvue/ods-navigation-audit.png" width="980" height="721" alt="Navigation audit comparing global headers and full menus, icon-only navigation and contextual controls."></figure>
+</section>
+<section class="case-section patterns-section" aria-labelledby="shared-components">
+<div class="editorial-copy"><p class="process-eyebrow">Shared patterns</p><h2 id="shared-components" tabindex="-1">From inconsistency to <span class="heading-continuation">a shared pattern</span></h2><div class="body-copy"><p>The audit showed where similar interactions had evolved differently across products.</p></div></div>
+<div class="pattern-progression">
+<article class="pattern-stage "><div class="stage-copy"><h3>Problem</h3><p>Users struggled to understand when filters were active, clear them easily, and work with large or complex datasets.</p></div><div class="feedback-quotes"><blockquote>“There should be a simple way to clear all filters instead of resetting everything one by one.”</blockquote>
+<blockquote>“When I’m working with a large dataset, filtering becomes difficult to manage.”</blockquote>
+<blockquote>“I can’t always tell when a filter is active unless I go back into the controls.”</blockquote></div><figure class="filter-visual"><video class="filter-demo-video" src="assets/videos/old-filters-demo.mp4?v=text-empty-state" poster="assets/videos/old-filters-demo-poster.png" width="1760" height="1116" autoplay muted loop playsinline preload="metadata" aria-label="Old table filters interaction showing filters within column headers.">Your browser does not support this video. <a href="assets/videos/old-filters-demo.mp4">Watch the old filters demo</a>.</video></figure></article>
+<article class="pattern-stage "><div class="stage-copy"><h3>What I considered</h3><p>How filters should behave across different contexts: placement, selection types, search, persistence, screen space and specialist use cases.</p></div><figure class="filter-visual"><video class="filter-demo-video" src="assets/videos/new-filters-demo.mp4?v=empty-state" poster="assets/videos/new-filters-demo-poster.png" width="1760" height="1116" autoplay muted loop playsinline preload="metadata" aria-label="New table filters interaction showing shared search, date filters, applied-filter count and clearing filters.">Your browser does not support this video. <a href="assets/videos/new-filters-demo.mp4">Watch the new filters demo</a>.</video></figure></article>
+<article class="pattern-stage pattern-stage--outcome"><div class="stage-copy"><h3>Outcome</h3><p>A documented shared pattern that defined where filters live, how they behave, and when teams should use alternative controls.</p></div><figure class="documentation-visual"><img src="assets/orgvue/ods-filter-documentation.png" width="1864" height="1302" alt="Shared filter-pattern documentation covering filters and search, table filters, behaviour and usage guidance."></figure></article>
+</div>
+</section>
+<section class="case-section implementation-section" aria-labelledby="implementation">
+<div class="editorial-copy"><p class="process-eyebrow">Implementation</p><h2 id="implementation" tabindex="-1">AI-assisted prototyping and implementation</h2><div class="body-copy"><p>I used Codex to prototype new design-system patterns against the existing product codebase rather than working only in static mockups.</p>
+<p>My manager and I set up the workflow so Codex could reference the correct components, design tokens and guidance. We also structured documentation in Markdown/MDX so the same rules and usage guidance could support both the team and AI-assisted workflows.</p>
+<p>The prototypes were reviewed with engineers, refined where needed, and the agreed patterns were then implemented in Storybook.</p></div></div>
+</section>
+</main>
+</body>
+</html>

@@ -1,0 +1,34 @@
+/* Better.co.uk Design System, Figma 362:7066 at 1440px.
+   Portfolio typography, gutters, sections, metadata and navigation are shared. */
+.better-ds .body-copy .ds-continuation { margin-top: 0; }
+/* A small font-metric adjustment retains the reference's single desktop line. */
+.better-ds .overview-section h2 { letter-spacing: .3px; }
+.better-ds .ds-hero { position: relative; aspect-ratio: 980 / 763; border-radius: 0; }
+.better-ds .ds-hero img { position: absolute; top: 0; left: -19.1%; width: 199.22%; height: 308.26%; max-width: none; }
+.ds-audit-visual { margin-top: 24px; }
+.ds-audit-visual img { border-radius: 8px; }
+.ds-audit-visual figcaption { margin-top: 12px; color: var(--muted); font-size: 12px; font-weight: 400; font-style: italic; line-height: 16px; letter-spacing: .12px; text-align: center; }
+
+/* The frame's priority row is 948px wide inside the shared 980px container. */
+.ds-priorities { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); align-items: start; gap: 24px; width: min(948px, 100%); margin-top: 24px; }
+.ds-priorities article { min-width: 0; padding: 16px; border: 1px solid #c8c8c8; border-radius: 8px; background: #fffdfa; }
+.better-ds .ds-priorities h3 { margin: 0; font-family: var(--font-body); font-size: 16px; font-weight: 700; line-height: 28px; letter-spacing: .16px; }
+.better-ds .ds-priorities .ds-example { margin-top: 28px; }
+
+.ds-rollout-visuals { display: grid; gap: 24px; margin-top: 24px; }
+.ds-rollout-row { display: grid; gap: 24px; align-items: start; }
+.ds-rollout-row figure { position: relative; overflow: hidden; border-radius: 2px; }
+.ds-rollout-row figure::after { content: ''; position: absolute; inset: 0; border: 1px solid #e4e4e4; border-radius: inherit; pointer-events: none; }
+.ds-rollout-journeys { grid-template-columns: minmax(0, 390fr) minmax(0, 562fr); padding-inline: 2px; }
+.ds-start-page { position: relative; aspect-ratio: 390 / 351; }
+.better-ds .ds-start-page img { position: absolute; top: -.04%; left: -13.72%; width: 126.67%; height: 100.08%; max-width: none; }
+.ds-buying-stage { aspect-ratio: 562 / 351; }
+.better-ds .ds-buying-stage img { width: 100%; height: 100%; object-fit: cover; }
+.ds-rollout-components { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.ds-rollout-plan { padding: 44px; background: #f6f6f3; }
+
+@media (max-width: 760px) {
+  .ds-priorities, .ds-rollout-row { grid-template-columns: 1fr; }
+  .ds-rollout-journeys { padding-inline: 0; }
+  .ds-rollout-plan { padding: 24px; }
+}

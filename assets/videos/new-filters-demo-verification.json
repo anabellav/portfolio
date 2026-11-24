@@ -1,0 +1,46 @@
+{
+  "canvas_css": [
+    880,
+    558
+  ],
+  "render_scale": 2,
+  "viewport": {
+    "width": 1760,
+    "height": 1116
+  },
+  "recording": "Playwright recordVideo",
+  "interaction": {
+    "search": "Functional",
+    "search_cleared": true,
+    "from": "2026-09-01",
+    "to": "2026-09-30",
+    "results": 2,
+    "filter_count": 1,
+    "empty_state": {
+      "search": "Workforce",
+      "dates_applied": true,
+      "results": 0
+    },
+    "cleared_results": 8
+  },
+  "webm": {
+    "size": [
+      1760,
+      1116
+    ],
+    "fps": 25.0,
+    "duration": 15.04,
+    "outer_edges": "clean",
+    "initial_table": "visible"
+  },
+  "mp4": {
+    "size": [
+      1760,
+      1116
+    ],
+    "fps": 25.0,
+    "duration": 15.04,
+    "outer_edges": "clean",
+    "initial_table": "visible"
+  }
+}

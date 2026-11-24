@@ -1,0 +1,29 @@
+/* Focused mobile composition of Figma 1615:204 and application card 3408:1529. */
+body { font-size: 16px; line-height: 23px; }
+.next-demo { width: min(375px, 100%); margin-inline: auto; padding: 32px 8px 28px; }
+.next-demo h1, .next-demo h2 { margin: 0 8px 8px; font-size: 24px; font-weight: 400; line-height: 29px; }
+.next-demo .next-card { display: block; padding: 23px; min-height: 569px; }
+.next-demo .journey-column { padding: 0; }
+.next-demo .journey-list li { min-height: 47px; font-size: 16px; line-height: 23px; }
+.next-demo .journey-list li:first-child { min-height: 70px; }
+.next-demo .journey-list li:last-child { min-height: 46px; }
+.next-demo .journey-list li[aria-current=step] .step-icon { outline: 2px solid #042759; outline-offset: 3px; border-radius: 50%; }
+.next-demo .journey-list li[aria-current=step] > span { font-weight: 600; }
+.next-demo .next-copy { border-left: 0; border-top: 1px solid #d8dfe9; margin: 16px 0 0; padding: 15px 0 0; }
+.next-demo .next-copy p { font-size: 16px; line-height: 23px; }
+.next-demo .next-copy p + p { margin-top: 16px; }
+.next-demo .viewing-question { margin-top: 24px; }
+.next-demo .viewing-question legend { margin-bottom: 8px; font-size: 16px; line-height: 21px; font-weight: 600; }
+.next-demo .radio-row { gap: 16px; }
+.next-demo .radio-choice { width: calc((100% - 16px) / 2); min-height: 48px; padding: 11px 15px; font-size: 16px; }
+.next-demo .application-section { margin-top: 24px; }
+.application-card { padding: 23px; border: 1px solid #d8dfe9; border-radius: 4px; background: #fff; }
+.application-info { display: flex; gap: 16px; align-items: center; }
+.application-info img { display: block; object-fit: contain; }
+.application-info p { margin: 0; font-size: 16px; line-height: 23px; }
+.application-card .primary-button { display: block; width: 100%; height: 48px; margin-top: 24px; font-family: 'Open Sans', sans-serif; font-size: 20px; line-height: 20px; font-weight: 600; }
+.next-demo[data-stage=ready] .application-card { border-color: #042759; }
+.next-demo[data-stage=application] #next-advice { font-weight: 600; }
+@media (prefers-reduced-motion: no-preference) {
+  .application-card { transition: border-color 180ms ease; }
+}

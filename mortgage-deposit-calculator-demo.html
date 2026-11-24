@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mortgage Hub · Mortgage deposit calculator</title>
+  <link rel="stylesheet" href="mortgage-hub-demo.css">
+  <link rel="stylesheet" href="mortgage-hub-loading-demo.css">
+  <link rel="stylesheet" href="mortgage-deposit-calculator-demo.css">
+  <script src="mortgage-deposit-calculator-demo.js" defer></script>
+</head>
+<body>
+  <header class="loading-header"><div class="loading-header-inner">
+    <img src="assets/mortgage-hub-loading/logo.svg" width="87.452" height="14" alt="Trussle">
+    <div class="loading-account"><img src="assets/mortgage-hub-loading/avatar.svg" width="24" height="24" alt=""><span>Lily</span><img src="assets/mortgage-hub-loading/chevron.svg" width="10" height="6" alt=""></div>
+  </div></header>
+  <main class="deposit-demo">
+    <header class="deposit-intro">
+      <h1>Lily, start sorting out your finances</h1>
+      <p>Learn how to make the most out of your income and reach your deposit goal</p>
+      <img src="assets/mortgage-hub/piggybank.png" width="164" height="160" alt="People saving coins in a piggy bank">
+    </header>
+    <section aria-labelledby="deposit-heading">
+      <h2 id="deposit-heading" class="section-title">Mortgage deposit calculator</h2>
+      <div class="planning-calculator">
+        <div class="deposit-fields">
+          <label class="field" for="property-price"><span>What is the property price?</span><span class="input-with-prefix"><span aria-hidden="true">£</span><input id="property-price" type="number" inputmode="numeric" min="0" max="10000000" step="1000" autocomplete="off"></span></label>
+          <div class="range-field">
+            <label for="ltv">Use the slider below to change the LTV.</label>
+            <div class="range-labels" aria-hidden="true"><span>75%</span><span>80%</span><span>85%</span><span>90%</span><span>95%</span></div>
+            <input type="range" id="ltv" min="75" max="95" step="5" value="80" aria-valuetext="80% loan to value">
+            <div class="range-ends"><span>Low</span><span>High</span></div>
+          </div>
+          <div class="ltv-help"><strong>LTV Bands</strong><p>LTV (loan to value) is the percentage of the property price you pay for with a mortgage. So if you put down a 5% deposit you’ll need a 95% LTV mortgage.</p></div>
+        </div>
+        <aside class="deposit-result" aria-labelledby="deposit-result-title">
+          <h3 id="deposit-result-title">Deposit amount</h3>
+          <output id="deposit-output" for="property-price ltv" aria-live="polite">£0</output>
+          <p>Your home may be repossessed if you do not keep up repayments on your mortgage. Our mortgage deposit calculation is for guidance only.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
